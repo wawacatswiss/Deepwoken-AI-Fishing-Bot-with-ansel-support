@@ -228,18 +228,15 @@ def manageKeyStates():
                 if newKey != currentKeyHeld:
                     if currentTime - lastKeyChangeTime > 0.2:
                         if currentKeyHeld:
-                            keyboard.release(currentKeyHeld)
+                            keyboard.release(currentKeyHeld) 
                         currentKeyHeld = newKey
-                        keyboard.press(currentKeyHeld)
+                        keyboard.press(currentKeyHeld)  
                         print(f"Holding '{currentKeyHeld.upper()}'.")
                         lastKeyChangeTime = currentTime
             else:
-                if currentTime - noKeyDetectionTime > 0.5:
+                if currentTime - noKeyDetectionTime > 0.5:  
                     if currentKeyHeld:
-                        keyboard.release('a')
-                        keyboard.release('s')
-                        keyboard.release('d')
-                        keyboard.release(currentKeyHeld)
+                        keyboard.release(currentKeyHeld)  
                         currentKeyHeld = None
                         print("Stopped holding any key.")
                         lastKeyChangeTime = currentTime
@@ -249,6 +246,7 @@ def manageKeyStates():
         except Exception as e:
             print(f"Error in manageKeyStates: {e}")
             time.sleep(1)
+
 
 def toggleScript(active):
     global isScriptActive
