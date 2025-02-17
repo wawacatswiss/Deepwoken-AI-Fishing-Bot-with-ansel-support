@@ -89,7 +89,7 @@ def findGameWindow():
         if win32gui.IsWindowVisible(hwnd) and win32gui.IsWindowEnabled(hwnd):
             _, pid = win32process.GetWindowThreadProcessId(hwnd)
             process = psutil.Process(pid)
-            if process.name() in ["RobloxPlayerBeta.exe", "Roblox.exe", "Windows10Universal.exe"]:
+            if process.name() in ["RobloxPlayerBeta.exe", "Roblox.exe", "Windows10Universal.exe", "eurotrucks2.exe"]:
                 hwnds.append(hwnd)
         return True
 
@@ -181,7 +181,7 @@ def clickLoop():
             currentTime = time.time()
             if currentKeyHeld:
                 keyboard.press(currentKeyHeld)
-                pyautogui.click()
+                #pyautogui.click()
                 lastKeyPressTime = currentTime
                 keyWasDetected = True
                 time.sleep(np.random.uniform(0.002, 0.008))
