@@ -4,7 +4,7 @@ This bot automatically fishes in the Roblox game *Deepwoken* using a combination
 
 I made this bot as a personal project and never thought i would be releasing it, so I will respond for support but very rarely because i dont even play deepwoken and dont really care about this project anymore. 
 
-**as of 1. of april, this thing still words**
+**as of 1. of april, this thing still words, also i just look at the fishtrap repo and apperently shaders dont work so this entire repo is useless**
 
 ## How It Works
 The bot captures the game screen, detects specific in-game UI elements, and performs automated actions (like pressing keys) based on what it sees. It helps to automate the fishing process in the game by identifying the necessary keypresses (A, S, D) during fishing.
